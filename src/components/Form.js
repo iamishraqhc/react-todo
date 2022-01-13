@@ -8,7 +8,7 @@ const Form = ({inputText, setInputText, todos, setTodos, setStatus}) => {
     const submitTodoHandler = (e) => {
         e.preventDefault();
         setTodos([
-            ...todos, {text: inputText, completed: false, id: Math.random() * 1000} //id is set like this just for now. Will add a proper id generator later
+            ...todos, {text: inputText, completed: false, id: Math.random() * 1000} 
         ]);
         setInputText("");
     }
